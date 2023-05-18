@@ -31,5 +31,10 @@ namespace iRh.Windows
         {
 
         }
+
+        private void menuDescontoIrrf_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
