@@ -16,5 +16,34 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalcularInss_Click(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(txtSalario.Text))
+            {
+                MessageBox.Show("INFORME SEU SALÁRIO BASE","ERRO",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                txtSalario.Focus();
+                return;
+            }
+            try
+            {
+                var salario = double.Parse(txtSalario.Text);
+                
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Informe um valor de salário valído,ex: 3500", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtSalario.Focus();
+                
+            }
+            
+
+            
+        }
     }
 }
