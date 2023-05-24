@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iRh.Windows.Cadastros.core;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,11 +34,15 @@ namespace iRh.Windows.Simuladores
             try
             {
                 var salario = double.Parse(txtSalario.Text);
-                
+                var descontoInss = Inss.Calcular(salario);
+                lblResultado.Text = descontoInss.ToString();
+                panelInss.Visible = true;
+                panelInss.Visible = true;
+                lblResultado.Visible = true;
             }
             catch (Exception)
             {
-                MessageBox.Show("Informe um valor de salário valído,ex: 3500", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Informe um valor de salário válido,ex: 3500", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtSalario.Focus();
                 
             }

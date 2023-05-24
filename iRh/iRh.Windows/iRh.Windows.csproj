@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cadastros\core\Calculadora.cs" />
     <Compile Include="Cadastros\frmFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>

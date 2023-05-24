@@ -75,6 +75,7 @@ namespace iRh.Windows.Simuladores
             this.panelInss.Name = "panelInss";
             this.panelInss.Size = new System.Drawing.Size(306, 100);
             this.panelInss.TabIndex = 3;
+            this.panelInss.Visible = false;
             // 
             // lblResultado
             // 
