@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Cadastros\core\Inss.cs" />
     <Compile Include="Cadastros\core\Fgts.cs" />
+    <Compile Include="Cadastros\core\Irrf.cs" />
     <Compile Include="Cadastros\core\ValeTransporte.cs" />
     <Compile Include="Cadastros\frmFuncionario.cs">
       <SubType>Form</SubType>
@@ -144,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmDescontoInss.resx">
       <DependentUpon>frmDescontoInss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simuladores\frmDescontoIrrf.resx">
+      <DependentUpon>frmDescontoIrrf.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
