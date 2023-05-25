@@ -20,7 +20,6 @@ namespace iRh.Windows.Simuladores
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void btnCalcularInss_Click(object sender, EventArgs e)
@@ -49,6 +48,11 @@ namespace iRh.Windows.Simuladores
             
 
             
+        }
+
+        private void frmDescontoInss_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

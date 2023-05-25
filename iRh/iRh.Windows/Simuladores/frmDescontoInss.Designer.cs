@@ -100,6 +100,7 @@ namespace iRh.Windows.Simuladores
             this.MinimizeBox = false;
             this.Name = "frmDescontoInss";
             this.Text = "Desconto Inss";
+            this.Load += new System.EventHandler(this.frmDescontoInss_Load);
             this.panelInss.ResumeLayout(false);
             this.panelInss.PerformLayout();
             this.ResumeLayout(false);

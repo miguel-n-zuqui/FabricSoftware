@@ -15,7 +15,7 @@ namespace iRh.Windows.Cadastros.core
         const double Faixa04 = 7507.49;
         public static double Calcular(double salario)
         {
-            double valorInss = 0 ;
+            double valorInss = 0.0 ;
             if(salario<=Faixa01)
             {
                 valorInss =CalcularFaixa1(salario);
