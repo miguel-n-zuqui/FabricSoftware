@@ -14,10 +14,16 @@ namespace iRh.Windows.Cadastros.core
             const double QuantidadeDeDiasTrabalhados = 20;
             double gastoMensal;
             double valorValeTransporte;
-            string resultadoValetranporte = "s";
             valorValeTransporte = salario * PorcentagemValeTransporte;
-            CalculadorVerificador= 
-            return resultadoValetranporte;
+            gastoMensal = valesPorDia * QuantidadeDeDiasTrabalhados * valorDaPassagem;
+            if(gastoMensal > valorValeTransporte)
+            {
+                return "Vale a pena utilizar o vale transporte";
+            }
+            else
+            {
+                return "Não vale a pena utilizar o vale transporte";
+            }
         }
     }
 }

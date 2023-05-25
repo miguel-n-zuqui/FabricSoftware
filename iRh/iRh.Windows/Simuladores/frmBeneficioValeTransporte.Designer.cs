@@ -156,6 +156,7 @@ namespace iRh.Windows.Simuladores
             this.Controls.Add(this.lblSalario);
             this.Name = "frmBeneficioValeTransporte";
             this.Text = "frmBeneficioValeTransporte";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.frmBeneficioValeTransporte_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

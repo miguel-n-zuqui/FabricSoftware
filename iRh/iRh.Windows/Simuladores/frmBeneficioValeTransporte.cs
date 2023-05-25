@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iRh.Windows.Cadastros.core;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -55,7 +56,7 @@ namespace iRh.Windows.Simuladores
         {
             if (string.IsNullOrEmpty(txtSalario.Text) && string.IsNullOrEmpty(txtValesPorDia.Text) && string.IsNullOrEmpty(txtValorDaPassagem.Text))
             {
-                MessageBox.Show("INFORME SEU SALÁRIO BASE", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("VERIFIQUE SE TODAS OS ESCOPOS ESTÃO PREENCHIDOS", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtSalario.Focus();
                 return;
             }
@@ -64,11 +65,13 @@ namespace iRh.Windows.Simuladores
                 var salario = double.Parse(txtSalario.Text);
                 var valesPorDia = double.Parse(txtValesPorDia.Text);
                 var valorDaPasagem = double.Parse(txtValorDaPassagem.Text);
-                var rultadoValeTransporte;
+                string rultadoValeTransporte = ValeTransporte.CalculadorVerificador(salario,valesPorDia,valorDaPasagem);
+                lblResultado.Text = rultadoValeTransporte;
+
             }
             catch (Exception)
             {
-                MessageBox.Show("Informe um valor de salário válido,ex: 3500", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("PREENCHA TODOS OS ESCOPOS", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtSalario.Focus();
 
             }
