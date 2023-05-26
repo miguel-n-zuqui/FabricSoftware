@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cadastros\core\AdicionalNoturno.cs" />
     <Compile Include="Cadastros\core\Inss.cs" />
     <Compile Include="Cadastros\core\Fgts.cs" />
     <Compile Include="Cadastros\core\Irrf.cs" />
@@ -137,6 +138,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Simuladores\frmBeneficioAdicionalNoturno.resx">
+      <DependentUpon>frmBeneficioAdicionalNoturno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmBeneficioFgts.resx">
       <DependentUpon>frmBeneficioFgts.cs</DependentUpon>
     </EmbeddedResource>
