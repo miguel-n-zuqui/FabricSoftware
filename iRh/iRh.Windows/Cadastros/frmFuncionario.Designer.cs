@@ -34,12 +34,12 @@ namespace iRh.Windows.Cadastros
             this.rbTemFilhosNao = new System.Windows.Forms.RadioButton();
             this.lblFilhos = new System.Windows.Forms.Label();
             this.txtFilhoNome = new System.Windows.Forms.TextBox();
-            this.txtFIlhoDataNascimento = new System.Windows.Forms.TextBox();
             this.lblFilhoNome = new System.Windows.Forms.Label();
             this.lblFilhoNascimento = new System.Windows.Forms.Label();
             this.lblIdade = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.panelExibeDadosFilhos = new System.Windows.Forms.Panel();
+            this.txtFilhoDataNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.panelExibeDadosFilhos.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmbGenero
@@ -64,6 +64,7 @@ namespace iRh.Windows.Cadastros
             this.rbTemFilhosSim.TabStop = true;
             this.rbTemFilhosSim.Text = "Sim";
             this.rbTemFilhosSim.UseVisualStyleBackColor = true;
+            this.rbTemFilhosSim.CheckedChanged += new System.EventHandler(this.rbTemFilhosSim_CheckedChanged);
             // 
             // rbTemFilhosNao
             // 
@@ -75,6 +76,7 @@ namespace iRh.Windows.Cadastros
             this.rbTemFilhosNao.TabStop = true;
             this.rbTemFilhosNao.Text = "Não";
             this.rbTemFilhosNao.UseVisualStyleBackColor = true;
+            this.rbTemFilhosNao.CheckedChanged += new System.EventHandler(this.rbTemFilhosNao_CheckedChanged);
             // 
             // lblFilhos
             // 
@@ -93,14 +95,6 @@ namespace iRh.Windows.Cadastros
             this.txtFilhoNome.Size = new System.Drawing.Size(100, 20);
             this.txtFilhoNome.TabIndex = 4;
             this.txtFilhoNome.TextChanged += new System.EventHandler(this.txtFilhoNome_TextChanged);
-            // 
-            // txtFIlhoDataNascimento
-            // 
-            this.txtFIlhoDataNascimento.Location = new System.Drawing.Point(136, 35);
-            this.txtFIlhoDataNascimento.Name = "txtFIlhoDataNascimento";
-            this.txtFIlhoDataNascimento.Size = new System.Drawing.Size(100, 20);
-            this.txtFIlhoDataNascimento.TabIndex = 5;
-            this.txtFIlhoDataNascimento.TextChanged += new System.EventHandler(this.txtFIlhoDataNascimento_TextChanged);
             // 
             // lblFilhoNome
             // 
@@ -130,27 +124,38 @@ namespace iRh.Windows.Cadastros
             this.lblIdade.Size = new System.Drawing.Size(44, 13);
             this.lblIdade.TabIndex = 8;
             this.lblIdade.Text = "lblIdade";
+            this.lblIdade.Visible = false;
             this.lblIdade.Click += new System.EventHandler(this.lblIdade_Click);
             // 
-            // panel1
+            // panelExibeDadosFilhos
             // 
-            this.panel1.Controls.Add(this.txtFIlhoDataNascimento);
-            this.panel1.Controls.Add(this.lblIdade);
-            this.panel1.Controls.Add(this.txtFilhoNome);
-            this.panel1.Controls.Add(this.lblFilhoNascimento);
-            this.panel1.Controls.Add(this.lblFilhoNome);
-            this.panel1.Location = new System.Drawing.Point(35, 148);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(316, 62);
-            this.panel1.TabIndex = 9;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panelExibeDadosFilhos.Controls.Add(this.txtFilhoDataNascimento);
+            this.panelExibeDadosFilhos.Controls.Add(this.lblIdade);
+            this.panelExibeDadosFilhos.Controls.Add(this.txtFilhoNome);
+            this.panelExibeDadosFilhos.Controls.Add(this.lblFilhoNascimento);
+            this.panelExibeDadosFilhos.Controls.Add(this.lblFilhoNome);
+            this.panelExibeDadosFilhos.Location = new System.Drawing.Point(35, 148);
+            this.panelExibeDadosFilhos.Name = "panelExibeDadosFilhos";
+            this.panelExibeDadosFilhos.Size = new System.Drawing.Size(316, 62);
+            this.panelExibeDadosFilhos.TabIndex = 9;
+            this.panelExibeDadosFilhos.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txtFilhoDataNascimento
+            // 
+            this.txtFilhoDataNascimento.Location = new System.Drawing.Point(136, 35);
+            this.txtFilhoDataNascimento.Mask = "00/00/0000";
+            this.txtFilhoDataNascimento.Name = "txtFilhoDataNascimento";
+            this.txtFilhoDataNascimento.Size = new System.Drawing.Size(100, 20);
+            this.txtFilhoDataNascimento.TabIndex = 9;
+            this.txtFilhoDataNascimento.ValidatingType = typeof(System.DateTime);
+            this.txtFilhoDataNascimento.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtFilhoDataNascimento_KeyDown);
             // 
             // frmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelExibeDadosFilhos);
             this.Controls.Add(this.lblFilhos);
             this.Controls.Add(this.rbTemFilhosNao);
             this.Controls.Add(this.rbTemFilhosSim);
@@ -158,8 +163,8 @@ namespace iRh.Windows.Cadastros
             this.Name = "frmFuncionario";
             this.Text = "frmFuncionario";
             this.Load += new System.EventHandler(this.frmFuncionario_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelExibeDadosFilhos.ResumeLayout(false);
+            this.panelExibeDadosFilhos.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,10 +177,10 @@ namespace iRh.Windows.Cadastros
         private System.Windows.Forms.RadioButton rbTemFilhosNao;
         private System.Windows.Forms.Label lblFilhos;
         private System.Windows.Forms.TextBox txtFilhoNome;
-        private System.Windows.Forms.TextBox txtFIlhoDataNascimento;
         private System.Windows.Forms.Label lblFilhoNome;
         private System.Windows.Forms.Label lblFilhoNascimento;
         private System.Windows.Forms.Label lblIdade;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelExibeDadosFilhos;
+        private System.Windows.Forms.MaskedTextBox txtFilhoDataNascimento;
     }
 }
