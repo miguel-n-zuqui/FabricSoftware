@@ -91,13 +91,12 @@ namespace iRh.Windows.Simuladores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 346);
+            this.ClientSize = new System.Drawing.Size(734, 511);
             this.Controls.Add(this.panelInss);
             this.Controls.Add(this.btnCalcularInss);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MinimizeBox = false;
             this.Name = "frmDescontoInss";
             this.Text = "Desconto Inss";
             this.Load += new System.EventHandler(this.frmDescontoInss_Load);

@@ -29,10 +29,17 @@ namespace iRh.Windows.Simuladores
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmBeneficioSeguroDesemprego
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(734, 511);
+            this.Name = "frmBeneficioSeguroDesemprego";
             this.Text = "frmBeneficioSeguroDesemprego";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

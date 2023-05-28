@@ -93,7 +93,7 @@ namespace iRh.Windows.Simuladores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 348);
+            this.ClientSize = new System.Drawing.Size(734, 511);
             this.Controls.Add(this.panelInss);
             this.Controls.Add(this.btnCalcularFgts);
             this.Controls.Add(this.txtSalario);

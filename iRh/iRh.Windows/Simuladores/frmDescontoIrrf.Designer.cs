@@ -30,11 +30,11 @@ namespace iRh.Windows.Simuladores
         private void InitializeComponent()
         {
             this.panelIrrf = new System.Windows.Forms.Panel();
+            this.lblResultadoIrrf = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnCalcularIrrf = new System.Windows.Forms.Button();
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.lblSalario = new System.Windows.Forms.Label();
-            this.lblResultadoIrrf = new System.Windows.Forms.Label();
             this.panelIrrf.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +48,16 @@ namespace iRh.Windows.Simuladores
             this.panelIrrf.Size = new System.Drawing.Size(306, 100);
             this.panelIrrf.TabIndex = 7;
             this.panelIrrf.Visible = false;
+            // 
+            // lblResultadoIrrf
+            // 
+            this.lblResultadoIrrf.AutoSize = true;
+            this.lblResultadoIrrf.Location = new System.Drawing.Point(23, 48);
+            this.lblResultadoIrrf.Name = "lblResultadoIrrf";
+            this.lblResultadoIrrf.Size = new System.Drawing.Size(50, 13);
+            this.lblResultadoIrrf.TabIndex = 5;
+            this.lblResultadoIrrf.Text = "resultado";
+            this.lblResultadoIrrf.Visible = false;
             // 
             // lblResultado
             // 
@@ -88,21 +98,11 @@ namespace iRh.Windows.Simuladores
             this.lblSalario.TabIndex = 4;
             this.lblSalario.Text = "SALÁRIO BASE";
             // 
-            // lblResultadoIrrf
-            // 
-            this.lblResultadoIrrf.AutoSize = true;
-            this.lblResultadoIrrf.Location = new System.Drawing.Point(23, 48);
-            this.lblResultadoIrrf.Name = "lblResultadoIrrf";
-            this.lblResultadoIrrf.Size = new System.Drawing.Size(50, 13);
-            this.lblResultadoIrrf.TabIndex = 5;
-            this.lblResultadoIrrf.Text = "resultado";
-            this.lblResultadoIrrf.Visible = false;
-            // 
             // frmDescontoIrrf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 348);
+            this.ClientSize = new System.Drawing.Size(734, 511);
             this.Controls.Add(this.panelIrrf);
             this.Controls.Add(this.btnCalcularIrrf);
             this.Controls.Add(this.txtSalario);

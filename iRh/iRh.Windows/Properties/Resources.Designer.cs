@@ -69,5 +69,15 @@ namespace iRh.Windows.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IRH_ADICIONAL_NOTURNO {
+            get {
+                object obj = ResourceManager.GetObject("IRH ADICIONAL NOTURNO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

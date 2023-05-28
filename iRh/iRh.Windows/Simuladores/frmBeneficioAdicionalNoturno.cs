@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -62,7 +63,9 @@ namespace iRh.Windows.Simuladores
                 var horasMensais = double.Parse(txtHorasMensais.Text);
                 var horasAdicionais = double.Parse(txtHorasNorturnasTrabalhadas.Text);
                 double horasNoturnas = AdicionalNoturno.Calcular(salario, horasMensais, horasAdicionais);
-                lblResutadoAdicionalNoturno.Text = horasNoturnas.ToString();
+
+                lblResutadoAdicionalNoturno.Text = (horasNoturnas.ToString("C", CultureInfo.CurrentCulture));
+                panelResultado.Visible = true;
             }
             catch(Exception)
             {

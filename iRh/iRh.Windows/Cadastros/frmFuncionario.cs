@@ -91,7 +91,7 @@ namespace iRh.Windows.Cadastros
                 case 1: return "Prezado, Senhor: ";
                 case 2: return "Prezado, Senhora: ";
                 default:
-                    return "Prezades, Senhores"
+                    return "Prezades, Senhores";
             }
             return "s";
         }
