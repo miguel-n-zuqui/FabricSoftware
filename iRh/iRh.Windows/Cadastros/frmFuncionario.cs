@@ -39,21 +39,6 @@ namespace iRh.Windows.Cadastros
 
         }
 
-        private void txtFIlhoDataNascimento_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void lblFilhoNascimento_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblIdade_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void rbTemFilhosSim_CheckedChanged(object sender, EventArgs e)
         {
             panelExibeDadosFilhos.Visible = true;

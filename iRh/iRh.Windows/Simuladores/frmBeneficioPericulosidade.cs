@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iRh.Windows.Cadastros.core;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +17,8 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
+
+
+
     }
 }

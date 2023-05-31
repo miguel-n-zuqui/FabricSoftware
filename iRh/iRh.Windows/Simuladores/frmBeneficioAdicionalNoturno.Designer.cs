@@ -110,7 +110,7 @@ namespace iRh.Windows.Simuladores
             this.lblHorasNoturnas.Size = new System.Drawing.Size(324, 60);
             this.lblHorasNoturnas.TabIndex = 6;
             this.lblHorasNoturnas.Text = "QUANTAS HORAS NOTURNAS A \r\nMAIS TRABALHOU?";
-            this.lblHorasNoturnas.Click += new System.EventHandler(this.label2_Click);
+      
             // 
             // lblResutadoAdicionalNoturno
             // 
@@ -123,7 +123,7 @@ namespace iRh.Windows.Simuladores
             this.lblResutadoAdicionalNoturno.Size = new System.Drawing.Size(105, 26);
             this.lblResutadoAdicionalNoturno.TabIndex = 8;
             this.lblResutadoAdicionalNoturno.Text = "resultado";
-            this.lblResutadoAdicionalNoturno.Click += new System.EventHandler(this.lblResutadoAdicionalNoturno_Click);
+
             // 
             // btnCalcularHorasNoturnas
             // 

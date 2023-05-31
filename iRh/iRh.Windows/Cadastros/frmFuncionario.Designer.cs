@@ -114,7 +114,7 @@ namespace iRh.Windows.Cadastros
             this.lblFilhoNascimento.Size = new System.Drawing.Size(102, 13);
             this.lblFilhoNascimento.TabIndex = 7;
             this.lblFilhoNascimento.Text = "Data de nascimento";
-            this.lblFilhoNascimento.Click += new System.EventHandler(this.lblFilhoNascimento_Click);
+
             // 
             // lblIdade
             // 
@@ -125,7 +125,6 @@ namespace iRh.Windows.Cadastros
             this.lblIdade.TabIndex = 8;
             this.lblIdade.Text = "lblIdade";
             this.lblIdade.Visible = false;
-            this.lblIdade.Click += new System.EventHandler(this.lblIdade_Click);
             // 
             // panelExibeDadosFilhos
             // 

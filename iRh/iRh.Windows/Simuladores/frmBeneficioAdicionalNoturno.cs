@@ -39,15 +39,7 @@ namespace iRh.Windows.Simuladores
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void lblResutadoAdicionalNoturno_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnCalcularHorasNoturnas_Click(object sender, EventArgs e)
         {
