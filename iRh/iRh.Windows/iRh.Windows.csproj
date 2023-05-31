@@ -51,7 +51,7 @@
     <Compile Include="Cadastros\core\Fgts.cs" />
     <Compile Include="Cadastros\core\Irrf.cs" />
     <Compile Include="Cadastros\core\Periculosidade.cs" />
-    <Compile Include="Cadastros\core\Piss.cs" />
+    <Compile Include="Cadastros\core\Pis.cs" />
     <Compile Include="Cadastros\core\ValeTransporte.cs" />
     <Compile Include="Cadastros\frmFuncionario.cs">
       <SubType>Form</SubType>
@@ -157,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmBeneficioPericulosidade.resx">
       <DependentUpon>frmBeneficioPericulosidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simuladores\frmBeneficioPis.resx">
+      <DependentUpon>frmBeneficioPis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmBeneficioSeguroDesemprego.resx">
       <DependentUpon>frmBeneficioSeguroDesemprego.cs</DependentUpon>

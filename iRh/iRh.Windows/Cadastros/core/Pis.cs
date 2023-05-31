@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace iRh.Windows.Cadastros.core
 {
-    public static class Piss
+    public static class Pis
     {
         public static double Calcular(double AnosDeEmpresa, double AnosTrabalhados)
         {
 
-            return 0 
+            return 0;
         }
     }
 }
