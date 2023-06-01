@@ -8,10 +8,12 @@ namespace iRh.Windows.Cadastros.core
 {
     public static class Pis
     {
-        public static double Calcular(double AnosDeEmpresa, double AnosTrabalhados)
+        public static double Calcular(double anosDeEmpresa,double salario)
         {
-
-            return 0;
+            var mesesTrabalhados = anosDeEmpresa * 12;
+            double valorDoPis = 0;
+            valorDoPis = salario / 12 * mesesTrabalhados;
+            return valorDoPis;
         }
     }
 }

@@ -55,6 +55,7 @@ namespace iRh.Windows.Simuladores
                 var horasMensais = double.Parse(txtHorasMensais.Text);
                 var horasAdicionais = double.Parse(txtHorasNorturnasTrabalhadas.Text);
                 double horasNoturnas = AdicionalNoturno.Calcular(salario, horasMensais, horasAdicionais);
+                
 
                 lblResutadoAdicionalNoturno.Text = (horasNoturnas.ToString("C", CultureInfo.CurrentCulture));
                 panelResultado.Visible = true;
