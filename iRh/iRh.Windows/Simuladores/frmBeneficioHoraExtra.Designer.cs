@@ -155,6 +155,7 @@ namespace iRh.Windows.Simuladores
             this.btnHoraExtra50.TabIndex = 19;
             this.btnHoraExtra50.Text = "CALCULAR HORA EXTRA 50% ";
             this.btnHoraExtra50.UseVisualStyleBackColor = false;
+            this.btnHoraExtra50.Click += new System.EventHandler(this.btnHoraExtra50_Click);
             // 
             // frmBeneficioHoraExtra
             // 
