@@ -56,11 +56,11 @@ namespace iRh.Windows.Simuladores
             // 
             this.lblResutadoAdicionalNoturno.AutoSize = true;
             this.lblResutadoAdicionalNoturno.BackColor = System.Drawing.Color.Transparent;
-            this.lblResutadoAdicionalNoturno.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResutadoAdicionalNoturno.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.lblResutadoAdicionalNoturno.Font = new System.Drawing.Font("Copperplate Gothic Bold", 15.75F);
+            this.lblResutadoAdicionalNoturno.ForeColor = System.Drawing.Color.White;
             this.lblResutadoAdicionalNoturno.Location = new System.Drawing.Point(24, 39);
             this.lblResutadoAdicionalNoturno.Name = "lblResutadoAdicionalNoturno";
-            this.lblResutadoAdicionalNoturno.Size = new System.Drawing.Size(105, 26);
+            this.lblResutadoAdicionalNoturno.Size = new System.Drawing.Size(133, 24);
             this.lblResutadoAdicionalNoturno.TabIndex = 8;
             this.lblResutadoAdicionalNoturno.Text = "resultado";
             // 
@@ -68,7 +68,7 @@ namespace iRh.Windows.Simuladores
             // 
             this.btnHorasExtra100.BackColor = System.Drawing.Color.Transparent;
             this.btnHorasExtra100.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHorasExtra100.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnHorasExtra100.ForeColor = System.Drawing.Color.White;
             this.btnHorasExtra100.Location = new System.Drawing.Point(30, 173);
             this.btnHorasExtra100.Name = "btnHorasExtra100";
             this.btnHorasExtra100.Size = new System.Drawing.Size(182, 60);
@@ -91,11 +91,11 @@ namespace iRh.Windows.Simuladores
             // 
             this.lblHorasNoturnas.AutoSize = true;
             this.lblHorasNoturnas.BackColor = System.Drawing.Color.Transparent;
-            this.lblHorasNoturnas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHorasNoturnas.ForeColor = System.Drawing.Color.Black;
+            this.lblHorasNoturnas.Font = new System.Drawing.Font("Segoe UI", 12.75F);
+            this.lblHorasNoturnas.ForeColor = System.Drawing.Color.White;
             this.lblHorasNoturnas.Location = new System.Drawing.Point(272, 27);
             this.lblHorasNoturnas.Name = "lblHorasNoturnas";
-            this.lblHorasNoturnas.Size = new System.Drawing.Size(155, 42);
+            this.lblHorasNoturnas.Size = new System.Drawing.Size(168, 46);
             this.lblHorasNoturnas.TabIndex = 15;
             this.lblHorasNoturnas.Text = "QUANTAS HORAS A \r\nMAIS TRABALHOU?";
             // 
@@ -114,13 +114,13 @@ namespace iRh.Windows.Simuladores
             // 
             this.lblHorasTrabalhadasPorMes.AutoSize = true;
             this.lblHorasTrabalhadasPorMes.BackColor = System.Drawing.Color.Transparent;
-            this.lblHorasTrabalhadasPorMes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHorasTrabalhadasPorMes.ForeColor = System.Drawing.Color.Black;
-            this.lblHorasTrabalhadasPorMes.Location = new System.Drawing.Point(502, 48);
+            this.lblHorasTrabalhadasPorMes.Font = new System.Drawing.Font("Segoe UI", 12.75F);
+            this.lblHorasTrabalhadasPorMes.ForeColor = System.Drawing.Color.White;
+            this.lblHorasTrabalhadasPorMes.Location = new System.Drawing.Point(506, 27);
             this.lblHorasTrabalhadasPorMes.Name = "lblHorasTrabalhadasPorMes";
-            this.lblHorasTrabalhadasPorMes.Size = new System.Drawing.Size(197, 21);
+            this.lblHorasTrabalhadasPorMes.Size = new System.Drawing.Size(147, 46);
             this.lblHorasTrabalhadasPorMes.TabIndex = 13;
-            this.lblHorasTrabalhadasPorMes.Text = "CARGA HORÁRIA MENSAL";
+            this.lblHorasTrabalhadasPorMes.Text = "CARGA HORÁRIA \r\nMENSAL";
             // 
             // txtSalario
             // 
@@ -136,11 +136,11 @@ namespace iRh.Windows.Simuladores
             // 
             this.lblSalario.AutoSize = true;
             this.lblSalario.BackColor = System.Drawing.Color.Transparent;
-            this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.ForeColor = System.Drawing.Color.Black;
-            this.lblSalario.Location = new System.Drawing.Point(26, 48);
+            this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 12.75F);
+            this.lblSalario.ForeColor = System.Drawing.Color.White;
+            this.lblSalario.Location = new System.Drawing.Point(26, 27);
             this.lblSalario.Name = "lblSalario";
-            this.lblSalario.Size = new System.Drawing.Size(113, 21);
+            this.lblSalario.Size = new System.Drawing.Size(121, 23);
             this.lblSalario.TabIndex = 11;
             this.lblSalario.Text = "SALÁRIO BASE";
             // 
@@ -148,7 +148,7 @@ namespace iRh.Windows.Simuladores
             // 
             this.btnHoraExtra50.BackColor = System.Drawing.Color.Transparent;
             this.btnHoraExtra50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoraExtra50.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnHoraExtra50.ForeColor = System.Drawing.Color.White;
             this.btnHoraExtra50.Location = new System.Drawing.Point(30, 267);
             this.btnHoraExtra50.Name = "btnHoraExtra50";
             this.btnHoraExtra50.Size = new System.Drawing.Size(182, 60);
@@ -161,6 +161,8 @@ namespace iRh.Windows.Simuladores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.iRH_Hora_extra;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(732, 383);
             this.Controls.Add(this.btnHoraExtra50);
             this.Controls.Add(this.panelResultado);
@@ -171,6 +173,7 @@ namespace iRh.Windows.Simuladores
             this.Controls.Add(this.lblHorasTrabalhadasPorMes);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
+            this.DoubleBuffered = true;
             this.Name = "frmBeneficioHoraExtra";
             this.Text = "frmBeneficioHoraExtra";
             this.panelResultado.ResumeLayout(false);

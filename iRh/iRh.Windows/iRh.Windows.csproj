@@ -213,5 +213,8 @@
   <ItemGroup>
     <None Include="Resources\IRH Periculosidade.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iRH Hora extra.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

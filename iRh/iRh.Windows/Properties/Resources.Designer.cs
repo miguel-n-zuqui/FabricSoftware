@@ -83,6 +83,16 @@ namespace iRh.Windows.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iRH_Hora_extra {
+            get {
+                object obj = ResourceManager.GetObject("iRH Hora extra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iRH_Inss {
             get {
                 object obj = ResourceManager.GetObject("iRH Inss", resourceCulture);
