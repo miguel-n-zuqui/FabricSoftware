@@ -127,10 +127,13 @@
   <data name="Fundo tela principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fundo tela principal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iRH vale transporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iRH vale transporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="IRH ADICIONAL NOTURNO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IRH ADICIONAL NOTURNO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iRH vale transporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iRH vale transporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iRH seguro desemprego" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iRH seguro desemprego.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
