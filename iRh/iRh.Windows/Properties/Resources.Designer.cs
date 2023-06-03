@@ -99,5 +99,15 @@ namespace iRh.Windows.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iRH_vale_transporte {
+            get {
+                object obj = ResourceManager.GetObject("iRH vale transporte", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
