@@ -103,6 +103,16 @@ namespace iRh.Windows.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iRH_Pis {
+            get {
+                object obj = ResourceManager.GetObject("iRH Pis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iRH_seguro_desemprego {
             get {
                 object obj = ResourceManager.GetObject("iRH seguro desemprego", resourceCulture);
