@@ -39,7 +39,7 @@ namespace iRh.Windows.Simuladores
             // 
             // panelInss
             // 
-            this.panelInss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelInss.BackColor = System.Drawing.Color.Transparent;
             this.panelInss.Controls.Add(this.lblResultado);
             this.panelInss.Location = new System.Drawing.Point(218, 228);
             this.panelInss.Name = "panelInss";
@@ -51,22 +51,26 @@ namespace iRh.Windows.Simuladores
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(73, 35);
+            this.lblResultado.Font = new System.Drawing.Font("Copperplate Gothic Bold", 21.75F);
+            this.lblResultado.Location = new System.Drawing.Point(39, 29);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(0, 30);
+            this.lblResultado.Size = new System.Drawing.Size(219, 33);
             this.lblResultado.TabIndex = 4;
+            this.lblResultado.Text = "RESULTADO";
             this.lblResultado.Visible = false;
             // 
             // btnCalcularFgts
             // 
+            this.btnCalcularFgts.BackColor = System.Drawing.Color.Transparent;
+            this.btnCalcularFgts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcularFgts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcularFgts.Location = new System.Drawing.Point(218, 153);
+            this.btnCalcularFgts.ForeColor = System.Drawing.Color.White;
+            this.btnCalcularFgts.Location = new System.Drawing.Point(262, 150);
             this.btnCalcularFgts.Name = "btnCalcularFgts";
             this.btnCalcularFgts.Size = new System.Drawing.Size(214, 35);
             this.btnCalcularFgts.TabIndex = 6;
             this.btnCalcularFgts.Text = "CALCULAR FGTS";
-            this.btnCalcularFgts.UseVisualStyleBackColor = true;
+            this.btnCalcularFgts.UseVisualStyleBackColor = false;
             this.btnCalcularFgts.Click += new System.EventHandler(this.btnCalcularFgts_Click);
             // 
             // txtSalario
@@ -81,8 +85,10 @@ namespace iRh.Windows.Simuladores
             // lblSalario
             // 
             this.lblSalario.AutoSize = true;
+            this.lblSalario.BackColor = System.Drawing.Color.Transparent;
             this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(213, 42);
+            this.lblSalario.ForeColor = System.Drawing.Color.White;
+            this.lblSalario.Location = new System.Drawing.Point(281, 35);
             this.lblSalario.Name = "lblSalario";
             this.lblSalario.Size = new System.Drawing.Size(152, 30);
             this.lblSalario.TabIndex = 4;
@@ -93,11 +99,14 @@ namespace iRh.Windows.Simuladores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.iRH_fgts;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(732, 383);
             this.Controls.Add(this.panelInss);
             this.Controls.Add(this.btnCalcularFgts);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
+            this.DoubleBuffered = true;
             this.Name = "frmBeneficioFgts";
             this.Text = "frmBeneficioFgts";
             this.panelInss.ResumeLayout(false);
