@@ -198,5 +198,8 @@
   <ItemGroup>
     <None Include="Resources\iRH Inss.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iRH Irrf.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

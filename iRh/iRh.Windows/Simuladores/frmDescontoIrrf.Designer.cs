@@ -40,10 +40,10 @@ namespace iRh.Windows.Simuladores
             // 
             // panelIrrf
             // 
-            this.panelIrrf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelIrrf.BackColor = System.Drawing.Color.Transparent;
             this.panelIrrf.Controls.Add(this.lblResultadoIrrf);
             this.panelIrrf.Controls.Add(this.lblResultado);
-            this.panelIrrf.Location = new System.Drawing.Point(29, 205);
+            this.panelIrrf.Location = new System.Drawing.Point(210, 217);
             this.panelIrrf.Name = "panelIrrf";
             this.panelIrrf.Size = new System.Drawing.Size(306, 100);
             this.panelIrrf.TabIndex = 7;
@@ -52,9 +52,11 @@ namespace iRh.Windows.Simuladores
             // lblResultadoIrrf
             // 
             this.lblResultadoIrrf.AutoSize = true;
-            this.lblResultadoIrrf.Location = new System.Drawing.Point(23, 48);
+            this.lblResultadoIrrf.Font = new System.Drawing.Font("Copperplate Gothic Bold", 21.75F);
+            this.lblResultadoIrrf.ForeColor = System.Drawing.Color.White;
+            this.lblResultadoIrrf.Location = new System.Drawing.Point(51, 32);
             this.lblResultadoIrrf.Name = "lblResultadoIrrf";
-            this.lblResultadoIrrf.Size = new System.Drawing.Size(50, 13);
+            this.lblResultadoIrrf.Size = new System.Drawing.Size(186, 33);
             this.lblResultadoIrrf.TabIndex = 5;
             this.lblResultadoIrrf.Text = "resultado";
             this.lblResultadoIrrf.Visible = false;
@@ -71,19 +73,22 @@ namespace iRh.Windows.Simuladores
             // 
             // btnCalcularIrrf
             // 
+            this.btnCalcularIrrf.BackColor = System.Drawing.Color.Transparent;
+            this.btnCalcularIrrf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcularIrrf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcularIrrf.Location = new System.Drawing.Point(29, 130);
+            this.btnCalcularIrrf.ForeColor = System.Drawing.Color.White;
+            this.btnCalcularIrrf.Location = new System.Drawing.Point(249, 143);
             this.btnCalcularIrrf.Name = "btnCalcularIrrf";
             this.btnCalcularIrrf.Size = new System.Drawing.Size(214, 35);
             this.btnCalcularIrrf.TabIndex = 6;
             this.btnCalcularIrrf.Text = "CALCULAR IRRF";
-            this.btnCalcularIrrf.UseVisualStyleBackColor = true;
+            this.btnCalcularIrrf.UseVisualStyleBackColor = false;
             this.btnCalcularIrrf.Click += new System.EventHandler(this.btnCalcularIrrf_Click);
             // 
             // txtSalario
             // 
             this.txtSalario.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalario.Location = new System.Drawing.Point(29, 65);
+            this.txtSalario.Location = new System.Drawing.Point(210, 77);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(306, 35);
             this.txtSalario.TabIndex = 5;
@@ -91,8 +96,10 @@ namespace iRh.Windows.Simuladores
             // lblSalario
             // 
             this.lblSalario.AutoSize = true;
+            this.lblSalario.BackColor = System.Drawing.Color.Transparent;
             this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(24, 19);
+            this.lblSalario.ForeColor = System.Drawing.Color.White;
+            this.lblSalario.Location = new System.Drawing.Point(283, 18);
             this.lblSalario.Name = "lblSalario";
             this.lblSalario.Size = new System.Drawing.Size(152, 30);
             this.lblSalario.TabIndex = 4;
@@ -102,11 +109,14 @@ namespace iRh.Windows.Simuladores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 511);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.iRH_Irrf;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(732, 383);
             this.Controls.Add(this.panelIrrf);
             this.Controls.Add(this.btnCalcularIrrf);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
+            this.DoubleBuffered = true;
             this.Name = "frmDescontoIrrf";
             this.Text = "frmDescontoIrrf";
             this.panelIrrf.ResumeLayout(false);
