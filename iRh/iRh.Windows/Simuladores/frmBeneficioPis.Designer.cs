@@ -33,10 +33,10 @@ namespace iRh.Windows.Simuladores
             this.lblTempoNoPis = new System.Windows.Forms.Label();
             this.rbMenosDeCincoAnos = new System.Windows.Forms.RadioButton();
             this.panelExibirResultadoEButao = new System.Windows.Forms.Panel();
+            this.btnCalcularEVerificar = new System.Windows.Forms.Button();
             this.lblResultadoPis = new System.Windows.Forms.Label();
             this.lblAnosDeEmpresa = new System.Windows.Forms.Label();
             this.txtTempoDeEmpresa = new System.Windows.Forms.TextBox();
-            this.btnCalcularEVerificar = new System.Windows.Forms.Button();
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.lblSalario = new System.Windows.Forms.Label();
             this.panelExibirResultadoEButao.SuspendLayout();
@@ -85,6 +85,16 @@ namespace iRh.Windows.Simuladores
             this.panelExibirResultadoEButao.TabIndex = 3;
             this.panelExibirResultadoEButao.Visible = false;
             // 
+            // btnCalcularEVerificar
+            // 
+            this.btnCalcularEVerificar.Location = new System.Drawing.Point(12, 12);
+            this.btnCalcularEVerificar.Name = "btnCalcularEVerificar";
+            this.btnCalcularEVerificar.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcularEVerificar.TabIndex = 1;
+            this.btnCalcularEVerificar.Text = "CALCULAR";
+            this.btnCalcularEVerificar.UseVisualStyleBackColor = true;
+            this.btnCalcularEVerificar.Click += new System.EventHandler(this.btnCalcularEVerificar_Click);
+            // 
             // lblResultadoPis
             // 
             this.lblResultadoPis.AutoSize = true;
@@ -111,16 +121,6 @@ namespace iRh.Windows.Simuladores
             this.txtTempoDeEmpresa.Size = new System.Drawing.Size(233, 20);
             this.txtTempoDeEmpresa.TabIndex = 5;
             // 
-            // btnCalcularEVerificar
-            // 
-            this.btnCalcularEVerificar.Location = new System.Drawing.Point(12, 12);
-            this.btnCalcularEVerificar.Name = "btnCalcularEVerificar";
-            this.btnCalcularEVerificar.Size = new System.Drawing.Size(75, 23);
-            this.btnCalcularEVerificar.TabIndex = 1;
-            this.btnCalcularEVerificar.Text = "CALCULAR";
-            this.btnCalcularEVerificar.UseVisualStyleBackColor = true;
-            this.btnCalcularEVerificar.Click += new System.EventHandler(this.btnCalcularEVerificar_Click);
-            // 
             // txtSalario
             // 
             this.txtSalario.Location = new System.Drawing.Point(62, 174);
@@ -141,7 +141,7 @@ namespace iRh.Windows.Simuladores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 511);
+            this.ClientSize = new System.Drawing.Size(732, 383);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
             this.Controls.Add(this.txtTempoDeEmpresa);

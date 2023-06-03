@@ -37,8 +37,8 @@ namespace iRh.Windows.Simuladores
             this.panelResultado = new System.Windows.Forms.Panel();
             this.lblResultadoSeguroDesemprego = new System.Windows.Forms.Label();
             this.panelMesestrabalhados = new System.Windows.Forms.Panel();
-            this.txtMesesTrabalhados = new System.Windows.Forms.TextBox();
             this.btnVerificar = new System.Windows.Forms.Button();
+            this.txtMesesTrabalhados = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panelResultado.SuspendLayout();
             this.panelMesestrabalhados.SuspendLayout();
@@ -123,13 +123,6 @@ namespace iRh.Windows.Simuladores
             this.panelMesestrabalhados.TabIndex = 11;
             this.panelMesestrabalhados.Visible = false;
             // 
-            // txtMesesTrabalhados
-            // 
-            this.txtMesesTrabalhados.Location = new System.Drawing.Point(4, 53);
-            this.txtMesesTrabalhados.Name = "txtMesesTrabalhados";
-            this.txtMesesTrabalhados.Size = new System.Drawing.Size(185, 20);
-            this.txtMesesTrabalhados.TabIndex = 1;
-            // 
             // btnVerificar
             // 
             this.btnVerificar.Location = new System.Drawing.Point(4, 93);
@@ -140,11 +133,18 @@ namespace iRh.Windows.Simuladores
             this.btnVerificar.UseVisualStyleBackColor = true;
             this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
             // 
+            // txtMesesTrabalhados
+            // 
+            this.txtMesesTrabalhados.Location = new System.Drawing.Point(4, 53);
+            this.txtMesesTrabalhados.Name = "txtMesesTrabalhados";
+            this.txtMesesTrabalhados.Size = new System.Drawing.Size(185, 20);
+            this.txtMesesTrabalhados.TabIndex = 1;
+            // 
             // frmBeneficioSeguroDesemprego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 511);
+            this.ClientSize = new System.Drawing.Size(732, 383);
             this.Controls.Add(this.panelMesestrabalhados);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.panel1);

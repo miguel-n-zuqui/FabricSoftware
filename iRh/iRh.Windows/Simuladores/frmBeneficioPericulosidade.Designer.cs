@@ -41,7 +41,7 @@ namespace iRh.Windows.Simuladores
             // 
             this.panelInss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panelInss.Controls.Add(this.lblResultado);
-            this.panelInss.Location = new System.Drawing.Point(17, 195);
+            this.panelInss.Location = new System.Drawing.Point(210, 222);
             this.panelInss.Name = "panelInss";
             this.panelInss.Size = new System.Drawing.Size(306, 100);
             this.panelInss.TabIndex = 7;
@@ -56,12 +56,11 @@ namespace iRh.Windows.Simuladores
             this.lblResultado.Size = new System.Drawing.Size(126, 30);
             this.lblResultado.TabIndex = 4;
             this.lblResultado.Text = "RESULTADO";
-
             // 
             // btnCalcularPericulosidade
             // 
             this.btnCalcularPericulosidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcularPericulosidade.Location = new System.Drawing.Point(17, 120);
+            this.btnCalcularPericulosidade.Location = new System.Drawing.Point(210, 147);
             this.btnCalcularPericulosidade.Name = "btnCalcularPericulosidade";
             this.btnCalcularPericulosidade.Size = new System.Drawing.Size(179, 55);
             this.btnCalcularPericulosidade.TabIndex = 6;
@@ -71,7 +70,7 @@ namespace iRh.Windows.Simuladores
             // txtSalario
             // 
             this.txtSalario.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalario.Location = new System.Drawing.Point(17, 55);
+            this.txtSalario.Location = new System.Drawing.Point(210, 82);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(306, 35);
             this.txtSalario.TabIndex = 5;
@@ -80,7 +79,7 @@ namespace iRh.Windows.Simuladores
             // 
             this.lblSalario.AutoSize = true;
             this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(12, 9);
+            this.lblSalario.Location = new System.Drawing.Point(205, 36);
             this.lblSalario.Name = "lblSalario";
             this.lblSalario.Size = new System.Drawing.Size(152, 30);
             this.lblSalario.TabIndex = 4;
@@ -90,7 +89,7 @@ namespace iRh.Windows.Simuladores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 511);
+            this.ClientSize = new System.Drawing.Size(732, 383);
             this.Controls.Add(this.panelInss);
             this.Controls.Add(this.btnCalcularPericulosidade);
             this.Controls.Add(this.txtSalario);

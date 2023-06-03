@@ -27,6 +27,7 @@ namespace iRh.Windows.Simuladores
         private void rbSim_CheckedChanged(object sender, EventArgs e)
         {
             panelMesestrabalhados.Visible = true;
+            lblResultadoSeguroDesemprego.Text = " ";
 
         }
 

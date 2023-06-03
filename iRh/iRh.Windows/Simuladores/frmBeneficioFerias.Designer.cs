@@ -41,7 +41,7 @@ namespace iRh.Windows.Simuladores
             // 
             this.panelResultado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panelResultado.Controls.Add(this.lblResultado);
-            this.panelResultado.Location = new System.Drawing.Point(32, 210);
+            this.panelResultado.Location = new System.Drawing.Point(213, 220);
             this.panelResultado.Name = "panelResultado";
             this.panelResultado.Size = new System.Drawing.Size(306, 100);
             this.panelResultado.TabIndex = 7;
@@ -60,7 +60,7 @@ namespace iRh.Windows.Simuladores
             // btnCalcularFerias
             // 
             this.btnCalcularFerias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcularFerias.Location = new System.Drawing.Point(32, 135);
+            this.btnCalcularFerias.Location = new System.Drawing.Point(213, 145);
             this.btnCalcularFerias.Name = "btnCalcularFerias";
             this.btnCalcularFerias.Size = new System.Drawing.Size(214, 35);
             this.btnCalcularFerias.TabIndex = 6;
@@ -71,7 +71,7 @@ namespace iRh.Windows.Simuladores
             // txtSalario
             // 
             this.txtSalario.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalario.Location = new System.Drawing.Point(32, 70);
+            this.txtSalario.Location = new System.Drawing.Point(213, 80);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(306, 35);
             this.txtSalario.TabIndex = 5;
@@ -80,7 +80,7 @@ namespace iRh.Windows.Simuladores
             // 
             this.lblSalario.AutoSize = true;
             this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(27, 24);
+            this.lblSalario.Location = new System.Drawing.Point(208, 34);
             this.lblSalario.Name = "lblSalario";
             this.lblSalario.Size = new System.Drawing.Size(152, 30);
             this.lblSalario.TabIndex = 4;
@@ -90,7 +90,7 @@ namespace iRh.Windows.Simuladores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 511);
+            this.ClientSize = new System.Drawing.Size(732, 383);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.btnCalcularFerias);
             this.Controls.Add(this.txtSalario);

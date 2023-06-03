@@ -110,27 +110,25 @@ namespace iRh.Windows.Simuladores
             this.lblHorasNoturnas.Size = new System.Drawing.Size(324, 60);
             this.lblHorasNoturnas.TabIndex = 6;
             this.lblHorasNoturnas.Text = "QUANTAS HORAS NOTURNAS A \r\nMAIS TRABALHOU?";
-      
             // 
             // lblResutadoAdicionalNoturno
             // 
             this.lblResutadoAdicionalNoturno.AutoSize = true;
             this.lblResutadoAdicionalNoturno.BackColor = System.Drawing.Color.Transparent;
-            this.lblResutadoAdicionalNoturno.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResutadoAdicionalNoturno.Font = new System.Drawing.Font("Copperplate Gothic Bold", 21.75F);
             this.lblResutadoAdicionalNoturno.ForeColor = System.Drawing.Color.Ivory;
-            this.lblResutadoAdicionalNoturno.Location = new System.Drawing.Point(37, 34);
+            this.lblResutadoAdicionalNoturno.Location = new System.Drawing.Point(3, 30);
             this.lblResutadoAdicionalNoturno.Name = "lblResutadoAdicionalNoturno";
-            this.lblResutadoAdicionalNoturno.Size = new System.Drawing.Size(105, 26);
+            this.lblResutadoAdicionalNoturno.Size = new System.Drawing.Size(186, 33);
             this.lblResutadoAdicionalNoturno.TabIndex = 8;
             this.lblResutadoAdicionalNoturno.Text = "resultado";
-
             // 
             // btnCalcularHorasNoturnas
             // 
             this.btnCalcularHorasNoturnas.BackColor = System.Drawing.Color.Transparent;
             this.btnCalcularHorasNoturnas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcularHorasNoturnas.ForeColor = System.Drawing.Color.FloralWhite;
-            this.btnCalcularHorasNoturnas.Location = new System.Drawing.Point(29, 303);
+            this.btnCalcularHorasNoturnas.Location = new System.Drawing.Point(29, 292);
             this.btnCalcularHorasNoturnas.Name = "btnCalcularHorasNoturnas";
             this.btnCalcularHorasNoturnas.Size = new System.Drawing.Size(186, 60);
             this.btnCalcularHorasNoturnas.TabIndex = 9;
@@ -142,9 +140,9 @@ namespace iRh.Windows.Simuladores
             // 
             this.panelResultado.BackColor = System.Drawing.Color.Transparent;
             this.panelResultado.Controls.Add(this.lblResutadoAdicionalNoturno);
-            this.panelResultado.Location = new System.Drawing.Point(221, 290);
+            this.panelResultado.Location = new System.Drawing.Point(221, 271);
             this.panelResultado.Name = "panelResultado";
-            this.panelResultado.Size = new System.Drawing.Size(186, 100);
+            this.panelResultado.Size = new System.Drawing.Size(248, 100);
             this.panelResultado.TabIndex = 10;
             this.panelResultado.Visible = false;
             // 
@@ -154,7 +152,7 @@ namespace iRh.Windows.Simuladores
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::iRh.Windows.Properties.Resources.IRH_ADICIONAL_NOTURNO;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(734, 511);
+            this.ClientSize = new System.Drawing.Size(732, 383);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.btnCalcularHorasNoturnas);
             this.Controls.Add(this.txtHorasNorturnasTrabalhadas);

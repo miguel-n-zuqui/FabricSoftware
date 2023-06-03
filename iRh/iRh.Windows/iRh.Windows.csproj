@@ -195,5 +195,8 @@
   <ItemGroup>
     <None Include="Resources\IRH ADICIONAL NOTURNO.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iRH Inss.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
