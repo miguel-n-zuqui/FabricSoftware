@@ -39,7 +39,7 @@ namespace iRh.Windows.Simuladores
             // 
             // panelResultado
             // 
-            this.panelResultado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelResultado.BackColor = System.Drawing.Color.Transparent;
             this.panelResultado.Controls.Add(this.lblResultado);
             this.panelResultado.Location = new System.Drawing.Point(213, 220);
             this.panelResultado.Name = "panelResultado";
@@ -50,22 +50,28 @@ namespace iRh.Windows.Simuladores
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(73, 35);
+            this.lblResultado.BackColor = System.Drawing.Color.Transparent;
+            this.lblResultado.Font = new System.Drawing.Font("Copperplate Gothic Bold", 21.75F);
+            this.lblResultado.ForeColor = System.Drawing.Color.White;
+            this.lblResultado.Location = new System.Drawing.Point(38, 30);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(0, 30);
+            this.lblResultado.Size = new System.Drawing.Size(219, 33);
             this.lblResultado.TabIndex = 4;
+            this.lblResultado.Text = "RESULTADO";
             this.lblResultado.Visible = false;
             // 
             // btnCalcularFerias
             // 
-            this.btnCalcularFerias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcularFerias.Location = new System.Drawing.Point(213, 145);
+            this.btnCalcularFerias.BackColor = System.Drawing.Color.Transparent;
+            this.btnCalcularFerias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcularFerias.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcularFerias.ForeColor = System.Drawing.Color.White;
+            this.btnCalcularFerias.Location = new System.Drawing.Point(256, 146);
             this.btnCalcularFerias.Name = "btnCalcularFerias";
             this.btnCalcularFerias.Size = new System.Drawing.Size(214, 35);
             this.btnCalcularFerias.TabIndex = 6;
             this.btnCalcularFerias.Text = "CALCULAR FÉRIAS";
-            this.btnCalcularFerias.UseVisualStyleBackColor = true;
+            this.btnCalcularFerias.UseVisualStyleBackColor = false;
             this.btnCalcularFerias.Click += new System.EventHandler(this.btnCalcularFerias_Click);
             // 
             // txtSalario
@@ -79,8 +85,10 @@ namespace iRh.Windows.Simuladores
             // lblSalario
             // 
             this.lblSalario.AutoSize = true;
+            this.lblSalario.BackColor = System.Drawing.Color.Transparent;
             this.lblSalario.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(208, 34);
+            this.lblSalario.ForeColor = System.Drawing.Color.White;
+            this.lblSalario.Location = new System.Drawing.Point(281, 24);
             this.lblSalario.Name = "lblSalario";
             this.lblSalario.Size = new System.Drawing.Size(152, 30);
             this.lblSalario.TabIndex = 4;
@@ -90,11 +98,14 @@ namespace iRh.Windows.Simuladores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.iRH_ferias;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(732, 383);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.btnCalcularFerias);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
+            this.DoubleBuffered = true;
             this.Name = "frmBeneficioFerias";
             this.Text = "frmBeneficioFerias";
             this.panelResultado.ResumeLayout(false);
