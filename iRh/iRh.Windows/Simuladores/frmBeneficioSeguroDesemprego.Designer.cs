@@ -116,12 +116,15 @@ namespace iRh.Windows.Simuladores
             // 
             // btnVerificar
             // 
+            this.btnVerificar.BackColor = System.Drawing.Color.Transparent;
+            this.btnVerificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerificar.ForeColor = System.Drawing.Color.White;
             this.btnVerificar.Location = new System.Drawing.Point(74, 158);
             this.btnVerificar.Name = "btnVerificar";
             this.btnVerificar.Size = new System.Drawing.Size(121, 39);
             this.btnVerificar.TabIndex = 2;
             this.btnVerificar.Text = "Verificar";
-            this.btnVerificar.UseVisualStyleBackColor = true;
+            this.btnVerificar.UseVisualStyleBackColor = false;
             this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
             // 
             // txtMesesTrabalhados
