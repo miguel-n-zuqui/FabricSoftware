@@ -118,14 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="iRH Irrf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iRH Irrf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iRH vale transporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iRH vale transporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iRH seguro desemprego" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iRH seguro desemprego.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Fundo tela principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fundo tela principal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iRH Pis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iRH Pis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iRH Inss" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iRH Inss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,10 +136,10 @@
   <data name="IRH ADICIONAL NOTURNO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IRH ADICIONAL NOTURNO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iRH Irrf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iRH Irrf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iRH seguro desemprego" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iRH seguro desemprego.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iRH Pis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iRH Pis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IRH Periculosidade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IRH Periculosidade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
