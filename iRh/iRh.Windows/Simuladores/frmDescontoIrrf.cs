@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,7 +33,7 @@ namespace iRh.Windows.Simuladores
             {
                 var salario = double.Parse(txtSalario.Text);
                 var descontoIrrf = Irrf.Calcular(salario);
-                lblResultadoIrrf.Text = descontoIrrf.ToString();
+                lblResultadoIrrf.Text = (descontoIrrf.ToString("C", CultureInfo.CurrentCulture));
                 lblResultadoIrrf.Visible = true;
                 panelIrrf.Visible = true;
                 

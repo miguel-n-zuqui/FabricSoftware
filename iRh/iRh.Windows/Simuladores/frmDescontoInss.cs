@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,7 +35,7 @@ namespace iRh.Windows.Simuladores
             {
                 var salario = double.Parse(txtSalario.Text);
                 var descontoInss = Inss.Calcular(salario);
-                lblResultado.Text = descontoInss.ToString();
+                lblResultado.Text = (descontoInss.ToString("C", CultureInfo.CurrentCulture));
                 panelInss.Visible = true;
                 panelInss.Visible = true;
                 lblResultado.Visible = true;
