@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace iRh.Windows.Cadastros
 {
     public partial class frmFuncionario : Form
@@ -26,7 +27,7 @@ namespace iRh.Windows.Cadastros
             var estado = new Estados();
             var listaEstados = estado.ObterTodosOsEstados();
             cmbEstados.Items.Clear();
-            cmbEstados.DataSource = listaEstados;
+            cmbEstados.DataSource = listaEstados.OrderBy(x => x.Sigla);
             cmbEstados.DisplayMember = "Sigla";
             cmbEstados.ValueMember = "Id";
            
