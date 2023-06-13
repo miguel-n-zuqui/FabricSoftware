@@ -36,7 +36,6 @@ namespace iRh.Windows.Cadastros
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
-            this.txtUf = new System.Windows.Forms.TextBox();
             this.txtDdd = new System.Windows.Forms.TextBox();
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@ namespace iRh.Windows.Cadastros
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtNascimento = new System.Windows.Forms.MaskedTextBox();
             this.lblDataNascimento = new System.Windows.Forms.Label();
+            this.cmbEstados = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtNome
@@ -103,13 +103,6 @@ namespace iRh.Windows.Cadastros
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(144, 20);
             this.txtCidade.TabIndex = 6;
-            // 
-            // txtUf
-            // 
-            this.txtUf.Location = new System.Drawing.Point(212, 279);
-            this.txtUf.Name = "txtUf";
-            this.txtUf.Size = new System.Drawing.Size(139, 20);
-            this.txtUf.TabIndex = 7;
             // 
             // txtDdd
             // 
@@ -252,11 +245,20 @@ namespace iRh.Windows.Cadastros
             this.lblDataNascimento.TabIndex = 23;
             this.lblDataNascimento.Text = "DATA DE NASCIMENTO";
             // 
+            // cmbEstados
+            // 
+            this.cmbEstados.FormattingEnabled = true;
+            this.cmbEstados.Location = new System.Drawing.Point(212, 277);
+            this.cmbEstados.Name = "cmbEstados";
+            this.cmbEstados.Size = new System.Drawing.Size(121, 21);
+            this.cmbEstados.TabIndex = 24;
+            // 
             // frmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmbEstados);
             this.Controls.Add(this.lblDataNascimento);
             this.Controls.Add(this.txtNascimento);
             this.Controls.Add(this.btnPesquisar);
@@ -273,7 +275,6 @@ namespace iRh.Windows.Cadastros
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtDdd);
-            this.Controls.Add(this.txtUf);
             this.Controls.Add(this.txtCidade);
             this.Controls.Add(this.txtBairro);
             this.Controls.Add(this.txtNumero);
@@ -298,7 +299,6 @@ namespace iRh.Windows.Cadastros
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtCidade;
-        private System.Windows.Forms.TextBox txtUf;
         private System.Windows.Forms.TextBox txtDdd;
         private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label lblNome;
@@ -315,5 +315,6 @@ namespace iRh.Windows.Cadastros
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.MaskedTextBox txtNascimento;
         private System.Windows.Forms.Label lblDataNascimento;
+        private System.Windows.Forms.ComboBox cmbEstados;
     }
 }
