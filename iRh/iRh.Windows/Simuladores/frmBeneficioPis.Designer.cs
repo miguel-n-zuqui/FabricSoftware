@@ -97,11 +97,11 @@ namespace iRh.Windows.Simuladores
             // lblResultadoPis
             // 
             this.lblResultadoPis.AutoSize = true;
-            this.lblResultadoPis.Font = new System.Drawing.Font("Copperplate Gothic Bold", 21.75F);
+            this.lblResultadoPis.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultadoPis.ForeColor = System.Drawing.Color.White;
-            this.lblResultadoPis.Location = new System.Drawing.Point(40, 32);
+            this.lblResultadoPis.Location = new System.Drawing.Point(46, 32);
             this.lblResultadoPis.Name = "lblResultadoPis";
-            this.lblResultadoPis.Size = new System.Drawing.Size(186, 33);
+            this.lblResultadoPis.Size = new System.Drawing.Size(122, 21);
             this.lblResultadoPis.TabIndex = 0;
             this.lblResultadoPis.Text = "resutlado";
             this.lblResultadoPis.Visible = false;

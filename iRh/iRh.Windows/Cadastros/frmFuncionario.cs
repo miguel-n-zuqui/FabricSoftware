@@ -26,10 +26,11 @@ namespace iRh.Windows.Cadastros
         {
             var estado = new Estados();
             var listaEstados = estado.ObterTodosOsEstados();
+            var estadosAz = listaEstados.OrderBy(x => x.Sigla).ToList();
             cmbEstados.Items.Clear();
-            cmbEstados.DataSource = listaEstados.OrderBy(x => x.Sigla);
+            cmbEstados.DataSource = estadosAz;
             cmbEstados.DisplayMember = "Sigla";
-            cmbEstados.ValueMember = "Id";
+            cmbEstados.ValueMember = "Nome";
            
         }
 

@@ -53,6 +53,8 @@ namespace iRh.Windows.Cadastros
             this.txtNascimento = new System.Windows.Forms.MaskedTextBox();
             this.lblDataNascimento = new System.Windows.Forms.Label();
             this.cmbEstados = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblDocumento = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtNome
@@ -253,11 +255,30 @@ namespace iRh.Windows.Cadastros
             this.cmbEstados.Size = new System.Drawing.Size(121, 21);
             this.cmbEstados.TabIndex = 24;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(552, 50);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 25;
+            // 
+            // lblDocumento
+            // 
+            this.lblDocumento.AutoSize = true;
+            this.lblDocumento.Location = new System.Drawing.Point(549, 34);
+            this.lblDocumento.Name = "lblDocumento";
+            this.lblDocumento.Size = new System.Drawing.Size(168, 13);
+            this.lblDocumento.TabIndex = 26;
+            this.lblDocumento.Text = "DOCUMENTO DE VERIFICAÇÃO";
+            // 
             // frmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblDocumento);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.cmbEstados);
             this.Controls.Add(this.lblDataNascimento);
             this.Controls.Add(this.txtNascimento);
@@ -316,5 +337,7 @@ namespace iRh.Windows.Cadastros
         private System.Windows.Forms.MaskedTextBox txtNascimento;
         private System.Windows.Forms.Label lblDataNascimento;
         private System.Windows.Forms.ComboBox cmbEstados;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblDocumento;
     }
 }
