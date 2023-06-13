@@ -53,7 +53,7 @@ namespace iRh.Windows.Cadastros
             this.txtNascimento = new System.Windows.Forms.MaskedTextBox();
             this.lblDataNascimento = new System.Windows.Forms.Label();
             this.cmbEstados = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbDocumento = new System.Windows.Forms.ComboBox();
             this.lblDocumento = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -186,7 +186,7 @@ namespace iRh.Windows.Cadastros
             // lblUfEstado
             // 
             this.lblUfEstado.AutoSize = true;
-            this.lblUfEstado.Location = new System.Drawing.Point(209, 253);
+            this.lblUfEstado.Location = new System.Drawing.Point(246, 254);
             this.lblUfEstado.Name = "lblUfEstado";
             this.lblUfEstado.Size = new System.Drawing.Size(70, 13);
             this.lblUfEstado.TabIndex = 17;
@@ -250,27 +250,27 @@ namespace iRh.Windows.Cadastros
             // cmbEstados
             // 
             this.cmbEstados.FormattingEnabled = true;
-            this.cmbEstados.Location = new System.Drawing.Point(212, 277);
+            this.cmbEstados.Location = new System.Drawing.Point(249, 278);
             this.cmbEstados.Name = "cmbEstados";
             this.cmbEstados.Size = new System.Drawing.Size(121, 21);
             this.cmbEstados.TabIndex = 24;
             // 
-            // comboBox1
+            // cmbDocumento
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(552, 50);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 25;
+            this.cmbDocumento.FormattingEnabled = true;
+            this.cmbDocumento.Location = new System.Drawing.Point(514, 50);
+            this.cmbDocumento.Name = "cmbDocumento";
+            this.cmbDocumento.Size = new System.Drawing.Size(239, 21);
+            this.cmbDocumento.TabIndex = 25;
             // 
             // lblDocumento
             // 
             this.lblDocumento.AutoSize = true;
-            this.lblDocumento.Location = new System.Drawing.Point(549, 34);
+            this.lblDocumento.Location = new System.Drawing.Point(511, 34);
             this.lblDocumento.Name = "lblDocumento";
-            this.lblDocumento.Size = new System.Drawing.Size(168, 13);
+            this.lblDocumento.Size = new System.Drawing.Size(187, 13);
             this.lblDocumento.TabIndex = 26;
-            this.lblDocumento.Text = "DOCUMENTO DE VERIFICAÇÃO";
+            this.lblDocumento.Text = "DOCUMENTO DE INDENTIFICAÇÃO";
             // 
             // frmFuncionario
             // 
@@ -278,7 +278,7 @@ namespace iRh.Windows.Cadastros
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblDocumento);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbDocumento);
             this.Controls.Add(this.cmbEstados);
             this.Controls.Add(this.lblDataNascimento);
             this.Controls.Add(this.txtNascimento);
@@ -337,7 +337,7 @@ namespace iRh.Windows.Cadastros
         private System.Windows.Forms.MaskedTextBox txtNascimento;
         private System.Windows.Forms.Label lblDataNascimento;
         private System.Windows.Forms.ComboBox cmbEstados;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbDocumento;
         private System.Windows.Forms.Label lblDocumento;
     }
 }

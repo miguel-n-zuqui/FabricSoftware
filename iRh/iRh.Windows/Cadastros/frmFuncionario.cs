@@ -21,6 +21,7 @@ namespace iRh.Windows.Cadastros
         private void frmFuncionario_Load(object sender, EventArgs e)
         {
             CarregarEstados();
+            CarregarDocumentos();
         }
         private void CarregarEstados()
         {
@@ -32,6 +33,16 @@ namespace iRh.Windows.Cadastros
             cmbEstados.DisplayMember = "Sigla";
             cmbEstados.ValueMember = "Nome";
            
+        }
+        private void CarregarDocumentos()
+        {
+            var documento = new DocumentoDeIdentificacao();
+            var listaDeDocumentos = documento.ObterTodosOsDocumentos();
+            var documentosAz = listaDeDocumentos.OrderBy(x => x.Descricao).ToList();
+            cmbDocumento.Items.Clear();
+            cmbDocumento.DataSource = documentosAz;
+            cmbDocumento.DisplayMember = "Descricao";
+            cmbDocumento.ValueMember = "Id";
         }
 
  
