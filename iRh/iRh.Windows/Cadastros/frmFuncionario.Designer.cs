@@ -228,6 +228,7 @@ namespace iRh.Windows.Cadastros
             this.btnPesquisar.TabIndex = 21;
             this.btnPesquisar.Text = "PESQUISAR";
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // txtNascimento
             // 
