@@ -304,6 +304,7 @@ namespace iRh.Windows.Cadastros
             this.Controls.Add(this.txtCep);
             this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.txtNome);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmFuncionario";
             this.Text = "frmFuncionario";
             this.Load += new System.EventHandler(this.frmFuncionario_Load);

@@ -51,6 +51,7 @@ namespace iRh.Windows.Simuladores
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Copperplate Gothic Bold", 21.75F);
+            this.lblResultado.ForeColor = System.Drawing.Color.White;
             this.lblResultado.Location = new System.Drawing.Point(12, 36);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(219, 33);
@@ -102,6 +103,7 @@ namespace iRh.Windows.Simuladores
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmBeneficioPericulosidade";
             this.Text = "frmBeneficioPericulosidade";
             this.panelInss.ResumeLayout(false);

@@ -175,6 +175,7 @@ namespace iRh.Windows.Simuladores
             this.Controls.Add(this.lblTempoNoPis);
             this.Controls.Add(this.rbMaisDeCincoAnos);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmBeneficioPis";
             this.Text = "frmBeneficioPis";
             this.panelExibirResultadoEButao.ResumeLayout(false);

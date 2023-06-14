@@ -30,8 +30,8 @@ namespace iRh.Windows.Cadastros
             var estadosAz = listaEstados.OrderBy(x => x.Sigla).ToList();
             cmbEstados.Items.Clear();
             cmbEstados.DataSource = estadosAz;
-            cmbEstados.DisplayMember = "Sigla";
-            cmbEstados.ValueMember = "Nome";
+            cmbEstados.DisplayMember = "Nome";
+            cmbEstados.ValueMember = "Sigla";
            
         }
         private void CarregarDocumentos()
@@ -50,7 +50,49 @@ namespace iRh.Windows.Cadastros
             var cepDigitado = txtCep.Text;
 
             var endereco = new Endereco();
+            
             var enderecoCompleto = endereco.obterPorCep(cepDigitado);
+            if (enderecoCompleto == null)
+            {
+                MessageBox.Show("INFORME UM CEP VALIDO", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCep.Focus();
+                txtCep.Clear();
+                return;
+                
+            }
+            else
+            {
+                txtLougradouro.Text = enderecoCompleto.Logradouro;
+                txtBairro.Text = enderecoCompleto.Bairro;
+                txtCidade.Text = enderecoCompleto.Localidade;
+                txtDdd.Text = enderecoCompleto.Ddd;
+                cmbEstados.SelectedValue = enderecoCompleto.Uf;
+              
+
+                if(txtLougradouro == null)
+                {
+                    txtLougradouro.Enabled = false;
+                }
+                if (txtBairro == null)
+                {
+                    txtBairro.Enabled = false;
+                }
+                if (txtCidade != null)
+                {
+                    txtCidade.Enabled = false;
+                }
+                if (txtDdd != null)
+                {
+                    txtDdd.Enabled = false;
+                }
+                if (cmbEstados != null)
+                {
+                    cmbEstados.Enabled = false;
+                }
+
+            }
         }
+
+ 
     }
 }

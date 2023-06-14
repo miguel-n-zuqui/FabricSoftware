@@ -11,7 +11,7 @@ namespace iRh.Windows.Cadastros.core
     internal class Endereco
     {
         public string Cep { get; set; }
-        public string Lougadouro { get; set; }
+        public string Logradouro { get; set; }
         public string Complemento { get; set; }
         public string Bairro { get; set; }
         public string Localidade { get; set; }
@@ -23,20 +23,26 @@ namespace iRh.Windows.Cadastros.core
         public Endereco obterPorCep(string cep)
         {
             var enderecoDaApi = new Endereco();
+            try
+            {
+                //Instancia http que permite obter informacoes da internet atravez de uma URL
+                var http = new HttpClient();
 
-            //Instancia http que permite obter informacoes da internet atravez de uma URL
-            var http = new HttpClient();
+                var url = new Uri("https://Viacep.com.br/ws/" + cep + "/json/");
+                var result = http.GetAsync(url).GetAwaiter().GetResult();
 
-            var url = new Uri("https://Viacep.com.br/ws/" + cep + "/json/");
-            var result = http.GetAsync(url).GetAwaiter().GetResult();
+                //Converter o resutlado obtido em uma string
+                var resultContent = result.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
-            //Converter o resutlado obtido em uma string
-            var resultContent = result.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                //converter a string json para nossa classe vaiCep Wrapper
+                enderecoDaApi = JsonConvert.DeserializeObject<Endereco>(resultContent);
 
-            //converter a string json para nossa classe vaiCep Wrapper
-            enderecoDaApi = JsonConvert.DeserializeObject<Endereco>(resultContent);
-
-            return enderecoDaApi;
+                return enderecoDaApi;
+            }
+            catch(Exception)
+            {
+                return null;
+            }
         }
 
 

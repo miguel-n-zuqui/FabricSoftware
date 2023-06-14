@@ -174,6 +174,7 @@ namespace iRh.Windows.Simuladores
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmBeneficioHoraExtra";
             this.Text = "frmBeneficioHoraExtra";
             this.panelResultado.ResumeLayout(false);
