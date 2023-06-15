@@ -31,7 +31,6 @@ namespace iRh.Windows.Cadastros
         {
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.TextBox();
-            this.txtCep = new System.Windows.Forms.TextBox();
             this.txtLougradouro = new System.Windows.Forms.TextBox();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
@@ -55,6 +54,7 @@ namespace iRh.Windows.Cadastros
             this.cmbEstados = new System.Windows.Forms.ComboBox();
             this.cmbDocumento = new System.Windows.Forms.ComboBox();
             this.lblDocumento = new System.Windows.Forms.Label();
+            this.txtCep = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // txtNome
@@ -70,13 +70,6 @@ namespace iRh.Windows.Cadastros
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(100, 20);
             this.txtCpf.TabIndex = 1;
-            // 
-            // txtCep
-            // 
-            this.txtCep.Location = new System.Drawing.Point(44, 138);
-            this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(100, 20);
-            this.txtCep.TabIndex = 2;
             // 
             // txtLougradouro
             // 
@@ -222,7 +215,7 @@ namespace iRh.Windows.Cadastros
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(189, 134);
+            this.btnPesquisar.Location = new System.Drawing.Point(150, 134);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisar.TabIndex = 21;
@@ -273,11 +266,21 @@ namespace iRh.Windows.Cadastros
             this.lblDocumento.TabIndex = 26;
             this.lblDocumento.Text = "DOCUMENTO DE INDENTIFICAÇÃO";
             // 
+            // txtCep
+            // 
+            this.txtCep.Location = new System.Drawing.Point(44, 136);
+            this.txtCep.Mask = "00000-000";
+            this.txtCep.Name = "txtCep";
+            this.txtCep.Size = new System.Drawing.Size(100, 20);
+            this.txtCep.TabIndex = 27;
+            this.txtCep.ValidatingType = typeof(int);
+            // 
             // frmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtCep);
             this.Controls.Add(this.lblDocumento);
             this.Controls.Add(this.cmbDocumento);
             this.Controls.Add(this.cmbEstados);
@@ -301,7 +304,6 @@ namespace iRh.Windows.Cadastros
             this.Controls.Add(this.txtBairro);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.txtLougradouro);
-            this.Controls.Add(this.txtCep);
             this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.txtNome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -317,7 +319,6 @@ namespace iRh.Windows.Cadastros
 
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtCpf;
-        private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.TextBox txtLougradouro;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.TextBox txtBairro;
@@ -341,5 +342,6 @@ namespace iRh.Windows.Cadastros
         private System.Windows.Forms.ComboBox cmbEstados;
         private System.Windows.Forms.ComboBox cmbDocumento;
         private System.Windows.Forms.Label lblDocumento;
+        private System.Windows.Forms.MaskedTextBox txtCep;
     }
 }

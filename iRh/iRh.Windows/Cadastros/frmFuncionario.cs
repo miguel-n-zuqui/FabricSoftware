@@ -47,8 +47,15 @@ namespace iRh.Windows.Cadastros
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            var cepDigitado = txtCep.Text;
 
+            var cepDigitado = txtCep.Text;
+            if(cepDigitado.Length < 9)
+            {
+                MessageBox.Show("INFORME UM CEP VALIDO", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCep.Focus();
+                txtCep.Clear();
+                return;
+            }
             var endereco = new Endereco();
             
             var enderecoCompleto = endereco.obterPorCep(cepDigitado);

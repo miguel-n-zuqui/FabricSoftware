@@ -20,7 +20,7 @@ namespace iRh.Windows.Cadastros.core
         public string Gia { get; set; }
         public string Ddd { get; set; }
         public string Siafi { get; set; }
-        public string erro { get; set; }
+        public bool Erro { get; set; }
         public Endereco obterPorCep(string cep)
         {
             var enderecoDaApi = new Endereco();
@@ -37,7 +37,7 @@ namespace iRh.Windows.Cadastros.core
 
                 //converter a string json para nossa classe vaiCep Wrapper
                 enderecoDaApi = JsonConvert.DeserializeObject<Endereco>(resultContent);
-                if(erro == null)
+                if(enderecoDaApi.Erro)
                 {
                     return null;
                 }
