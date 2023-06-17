@@ -73,9 +73,29 @@ namespace iRh.Windows.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_1_ {
+            get {
+                object obj = ResourceManager.GetObject("image(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IRH_ADICIONAL_NOTURNO {
             get {
                 object obj = ResourceManager.GetObject("IRH ADICIONAL NOTURNO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IRH_Colaborador {
+            get {
+                object obj = ResourceManager.GetObject("IRH Colaborador", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

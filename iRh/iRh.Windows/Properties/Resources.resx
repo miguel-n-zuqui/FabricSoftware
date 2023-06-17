@@ -127,6 +127,9 @@
   <data name="iRH vale transporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iRH vale transporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IRH Colaborador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IRH Colaborador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iRH seguro desemprego" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iRH seguro desemprego.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -135,6 +138,9 @@
   </data>
   <data name="iRH fgts" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iRH fgts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iRH ferias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iRH ferias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iRH Pis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iRH Pis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,7 +154,7 @@
   <data name="iRH Irrf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iRH Irrf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iRH ferias" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iRH ferias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

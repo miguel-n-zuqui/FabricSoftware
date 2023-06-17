@@ -29,6 +29,7 @@ namespace iRh.Windows.Cadastros
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFuncionario));
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.txtLougradouro = new System.Windows.Forms.TextBox();
@@ -55,6 +56,7 @@ namespace iRh.Windows.Cadastros
             this.cmbDocumento = new System.Windows.Forms.ComboBox();
             this.lblDocumento = new System.Windows.Forms.Label();
             this.txtCep = new System.Windows.Forms.MaskedTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // txtNome
@@ -116,33 +118,45 @@ namespace iRh.Windows.Cadastros
             // lblNome
             // 
             this.lblNome.AutoSize = true;
+            this.lblNome.BackColor = System.Drawing.Color.Transparent;
+            this.lblNome.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.White;
             this.lblNome.Location = new System.Drawing.Point(44, 34);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(39, 13);
+            this.lblNome.Size = new System.Drawing.Size(40, 13);
             this.lblNome.TabIndex = 10;
             this.lblNome.Text = "NOME";
             // 
             // lblCpf
             // 
             this.lblCpf.AutoSize = true;
+            this.lblCpf.BackColor = System.Drawing.Color.Transparent;
+            this.lblCpf.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCpf.ForeColor = System.Drawing.Color.White;
             this.lblCpf.Location = new System.Drawing.Point(209, 34);
             this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(27, 13);
+            this.lblCpf.Size = new System.Drawing.Size(26, 13);
             this.lblCpf.TabIndex = 11;
             this.lblCpf.Text = "CPF";
             // 
             // lblCep
             // 
             this.lblCep.AutoSize = true;
+            this.lblCep.BackColor = System.Drawing.Color.Transparent;
+            this.lblCep.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCep.ForeColor = System.Drawing.Color.White;
             this.lblCep.Location = new System.Drawing.Point(41, 112);
             this.lblCep.Name = "lblCep";
-            this.lblCep.Size = new System.Drawing.Size(28, 13);
+            this.lblCep.Size = new System.Drawing.Size(26, 13);
             this.lblCep.TabIndex = 12;
             this.lblCep.Text = "CEP";
             // 
             // lblLougradouro
             // 
             this.lblLougradouro.AutoSize = true;
+            this.lblLougradouro.BackColor = System.Drawing.Color.Transparent;
+            this.lblLougradouro.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLougradouro.ForeColor = System.Drawing.Color.White;
             this.lblLougradouro.Location = new System.Drawing.Point(41, 184);
             this.lblLougradouro.Name = "lblLougradouro";
             this.lblLougradouro.Size = new System.Drawing.Size(84, 13);
@@ -152,6 +166,9 @@ namespace iRh.Windows.Cadastros
             // lblNumero
             // 
             this.lblNumero.AutoSize = true;
+            this.lblNumero.BackColor = System.Drawing.Color.Transparent;
+            this.lblNumero.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.ForeColor = System.Drawing.Color.White;
             this.lblNumero.Location = new System.Drawing.Point(246, 184);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(55, 13);
@@ -161,33 +178,45 @@ namespace iRh.Windows.Cadastros
             // lblBairro
             // 
             this.lblBairro.AutoSize = true;
+            this.lblBairro.BackColor = System.Drawing.Color.Transparent;
+            this.lblBairro.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBairro.ForeColor = System.Drawing.Color.White;
             this.lblBairro.Location = new System.Drawing.Point(430, 184);
             this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(48, 13);
+            this.lblBairro.Size = new System.Drawing.Size(46, 13);
             this.lblBairro.TabIndex = 15;
             this.lblBairro.Text = "BAIRRO";
             // 
             // lblCidade
             // 
             this.lblCidade.AutoSize = true;
+            this.lblCidade.BackColor = System.Drawing.Color.Transparent;
+            this.lblCidade.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCidade.ForeColor = System.Drawing.Color.White;
             this.lblCidade.Location = new System.Drawing.Point(44, 253);
             this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(47, 13);
+            this.lblCidade.Size = new System.Drawing.Size(46, 13);
             this.lblCidade.TabIndex = 16;
             this.lblCidade.Text = "CIDADE";
             // 
             // lblUfEstado
             // 
             this.lblUfEstado.AutoSize = true;
+            this.lblUfEstado.BackColor = System.Drawing.Color.Transparent;
+            this.lblUfEstado.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUfEstado.ForeColor = System.Drawing.Color.White;
             this.lblUfEstado.Location = new System.Drawing.Point(246, 254);
             this.lblUfEstado.Name = "lblUfEstado";
-            this.lblUfEstado.Size = new System.Drawing.Size(70, 13);
+            this.lblUfEstado.Size = new System.Drawing.Size(66, 13);
             this.lblUfEstado.TabIndex = 17;
             this.lblUfEstado.Text = "UF/ESTADO";
             // 
             // lblDdd
             // 
             this.lblDdd.AutoSize = true;
+            this.lblDdd.BackColor = System.Drawing.Color.Transparent;
+            this.lblDdd.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDdd.ForeColor = System.Drawing.Color.White;
             this.lblDdd.Location = new System.Drawing.Point(44, 327);
             this.lblDdd.Name = "lblDdd";
             this.lblDdd.Size = new System.Drawing.Size(31, 13);
@@ -197,16 +226,21 @@ namespace iRh.Windows.Cadastros
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
+            this.lblTelefone.BackColor = System.Drawing.Color.Transparent;
+            this.lblTelefone.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.ForeColor = System.Drawing.Color.White;
             this.lblTelefone.Location = new System.Drawing.Point(137, 327);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(63, 13);
+            this.lblTelefone.Size = new System.Drawing.Size(59, 13);
             this.lblTelefone.TabIndex = 19;
             this.lblTelefone.Text = "TELEFONE";
             // 
             // lblChamarNoZap
             // 
             this.lblChamarNoZap.AutoSize = true;
-            this.lblChamarNoZap.Location = new System.Drawing.Point(348, 358);
+            this.lblChamarNoZap.BackColor = System.Drawing.Color.Transparent;
+            this.lblChamarNoZap.LinkColor = System.Drawing.Color.Lime;
+            this.lblChamarNoZap.Location = new System.Drawing.Point(396, 355);
             this.lblChamarNoZap.Name = "lblChamarNoZap";
             this.lblChamarNoZap.Size = new System.Drawing.Size(80, 13);
             this.lblChamarNoZap.TabIndex = 20;
@@ -215,12 +249,16 @@ namespace iRh.Windows.Cadastros
             // 
             // btnPesquisar
             // 
+            this.btnPesquisar.BackColor = System.Drawing.Color.Transparent;
+            this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisar.ForeColor = System.Drawing.Color.White;
             this.btnPesquisar.Location = new System.Drawing.Point(150, 134);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
+            this.btnPesquisar.Size = new System.Drawing.Size(93, 22);
             this.btnPesquisar.TabIndex = 21;
             this.btnPesquisar.Text = "PESQUISAR";
-            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // txtNascimento
@@ -235,9 +273,12 @@ namespace iRh.Windows.Cadastros
             // lblDataNascimento
             // 
             this.lblDataNascimento.AutoSize = true;
+            this.lblDataNascimento.BackColor = System.Drawing.Color.Transparent;
+            this.lblDataNascimento.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataNascimento.ForeColor = System.Drawing.Color.White;
             this.lblDataNascimento.Location = new System.Drawing.Point(377, 34);
             this.lblDataNascimento.Name = "lblDataNascimento";
-            this.lblDataNascimento.Size = new System.Drawing.Size(128, 13);
+            this.lblDataNascimento.Size = new System.Drawing.Size(122, 13);
             this.lblDataNascimento.TabIndex = 23;
             this.lblDataNascimento.Text = "DATA DE NASCIMENTO";
             // 
@@ -260,9 +301,12 @@ namespace iRh.Windows.Cadastros
             // lblDocumento
             // 
             this.lblDocumento.AutoSize = true;
+            this.lblDocumento.BackColor = System.Drawing.Color.Transparent;
+            this.lblDocumento.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDocumento.ForeColor = System.Drawing.Color.White;
             this.lblDocumento.Location = new System.Drawing.Point(511, 34);
             this.lblDocumento.Name = "lblDocumento";
-            this.lblDocumento.Size = new System.Drawing.Size(187, 13);
+            this.lblDocumento.Size = new System.Drawing.Size(185, 13);
             this.lblDocumento.TabIndex = 26;
             this.lblDocumento.Text = "DOCUMENTO DE INDENTIFICAÇÃO";
             // 
@@ -275,11 +319,24 @@ namespace iRh.Windows.Cadastros
             this.txtCep.TabIndex = 27;
             this.txtCep.ValidatingType = typeof(int);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::iRh.Windows.Properties.Resources.image_1_;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(362, 355);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(28, 20);
+            this.panel1.TabIndex = 28;
+            // 
             // frmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.IRH_Colaborador;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtCep);
             this.Controls.Add(this.lblDocumento);
             this.Controls.Add(this.cmbDocumento);
@@ -306,7 +363,9 @@ namespace iRh.Windows.Cadastros
             this.Controls.Add(this.txtLougradouro);
             this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.txtNome);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmFuncionario";
             this.Text = "frmFuncionario";
             this.Load += new System.EventHandler(this.frmFuncionario_Load);
@@ -336,12 +395,13 @@ namespace iRh.Windows.Cadastros
         private System.Windows.Forms.Label lblDdd;
         private System.Windows.Forms.Label lblTelefone;
         private System.Windows.Forms.LinkLabel lblChamarNoZap;
-        private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.MaskedTextBox txtNascimento;
         private System.Windows.Forms.Label lblDataNascimento;
         private System.Windows.Forms.ComboBox cmbEstados;
         private System.Windows.Forms.ComboBox cmbDocumento;
         private System.Windows.Forms.Label lblDocumento;
         private System.Windows.Forms.MaskedTextBox txtCep;
+        private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.Panel panel1;
     }
 }
