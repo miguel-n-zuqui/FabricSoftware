@@ -8,8 +8,9 @@ namespace iRh.Windows.Cadastros.core
 {
     public static class ValeTransporte
     {
-        public static string CalculadorVerificador(double salario, double valesPorDia,double valorDaPassagem)
+        public static string Verificador(double salario, double valesPorDia,double valorDaPassagem)
         {
+
             const double PorcentagemValeTransporte = 0.06;
             const double QuantidadeDeDiasTrabalhados = 20;
             double gastoMensal;
@@ -24,6 +25,17 @@ namespace iRh.Windows.Cadastros.core
             {
                 return "Não vale a pena utilizar o vale transporte";
             }
+        }
+        public static double Calcular(double salario)
+        {
+
+            const double PorcentagemValeTransporte = 0.06;
+            const double QuantidadeDeDiasTrabalhados = 20;
+            double gastoMensal;
+            double valorValeTransporte;
+            valorValeTransporte = salario * PorcentagemValeTransporte;
+            return valorValeTransporte;
+            
         }
     }
 }

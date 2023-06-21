@@ -65,7 +65,7 @@ namespace iRh.Windows.Simuladores
                 var salario = double.Parse(txtSalario.Text);
                 var valesPorDia = double.Parse(txtValesPorDia.Text);
                 var valorDaPasagem = double.Parse(txtValorDaPassagem.Text);
-                string rultadoValeTransporte = ValeTransporte.CalculadorVerificador(salario,valesPorDia,valorDaPasagem);
+                string rultadoValeTransporte = ValeTransporte.Verificador(salario,valesPorDia,valorDaPasagem);
                 lblResultado.Text = rultadoValeTransporte;
                 panelResultado.Visible = true;  
 

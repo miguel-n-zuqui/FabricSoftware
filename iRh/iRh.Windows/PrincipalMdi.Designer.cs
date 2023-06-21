@@ -45,6 +45,7 @@ namespace iRh.Windows
             this.menuBeneficioPis = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBeneficioSeguroDesemprego = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBeneficioValeTranspote = new System.Windows.Forms.ToolStripMenuItem();
+            this.salárioLiquidoNoFinalDoMêsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +88,8 @@ namespace iRh.Windows
             this.menuBeneficioPericulosidade,
             this.menuBeneficioPis,
             this.menuBeneficioSeguroDesemprego,
-            this.menuBeneficioValeTranspote});
+            this.menuBeneficioValeTranspote,
+            this.salárioLiquidoNoFinalDoMêsToolStripMenuItem});
             this.simuladoresToolStripMenuItem.Name = "simuladoresToolStripMenuItem";
             this.simuladoresToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
             this.simuladoresToolStripMenuItem.Text = " Simuladores";
@@ -168,6 +170,13 @@ namespace iRh.Windows
             this.menuBeneficioValeTranspote.Text = "Beneficios de Vale Transporte";
             this.menuBeneficioValeTranspote.Click += new System.EventHandler(this.menuBeneficioValeTranspote_Click);
             // 
+            // salárioLiquidoNoFinalDoMêsToolStripMenuItem
+            // 
+            this.salárioLiquidoNoFinalDoMêsToolStripMenuItem.Name = "salárioLiquidoNoFinalDoMêsToolStripMenuItem";
+            this.salárioLiquidoNoFinalDoMêsToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
+            this.salárioLiquidoNoFinalDoMêsToolStripMenuItem.Text = "Salário Liquido no Final do mês";
+            this.salárioLiquidoNoFinalDoMêsToolStripMenuItem.Click += new System.EventHandler(this.salárioLiquidoNoFinalDoMêsToolStripMenuItem_Click);
+            // 
             // PrincipalMdi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,5 +216,6 @@ namespace iRh.Windows
         private System.Windows.Forms.ToolStripMenuItem menuBeneficioSeguroDesemprego;
         private System.Windows.Forms.ToolStripMenuItem menuBeneficioValeTranspote;
         private System.Windows.Forms.ToolStripMenuItem menuBeneficioFerias;
+        private System.Windows.Forms.ToolStripMenuItem salárioLiquidoNoFinalDoMêsToolStripMenuItem;
     }
 }

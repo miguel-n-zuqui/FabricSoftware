@@ -106,5 +106,12 @@ namespace iRh.Windows
             form.MdiParent = this;
             form.Show();
         }
+
+        private void salárioLiquidoNoFinalDoMêsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new frmDetalhamento();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
