@@ -43,7 +43,7 @@ namespace iRh.Windows.Simuladores
             this.lblHorasExtras = new System.Windows.Forms.Label();
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.lblSalario = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelResposta = new System.Windows.Forms.Panel();
             this.lblFgts = new System.Windows.Forms.Label();
             this.lblIrrfResposta = new System.Windows.Forms.Label();
             this.lblInssResposta = new System.Windows.Forms.Label();
@@ -58,7 +58,7 @@ namespace iRh.Windows.Simuladores
             this.lblDescontos = new System.Windows.Forms.Label();
             this.lblAdicionais = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.panelResposta.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -191,23 +191,24 @@ namespace iRh.Windows.Simuladores
             this.lblSalario.TabIndex = 18;
             this.lblSalario.Text = "SALARIO BASE";
             // 
-            // panel1
+            // panelResposta
             // 
-            this.panel1.Controls.Add(this.lblAdicionais);
-            this.panel1.Controls.Add(this.lblDescontos);
-            this.panel1.Controls.Add(this.lblSalarioLiquido);
-            this.panel1.Controls.Add(this.lblFgts);
-            this.panel1.Controls.Add(this.lblIrrfResposta);
-            this.panel1.Controls.Add(this.lblInssResposta);
-            this.panel1.Controls.Add(this.lblAdicionalNoturnasResposta);
-            this.panel1.Controls.Add(this.lblHorasExtrasRespostas);
-            this.panel1.Controls.Add(this.lblPericulosidadeResposta);
-            this.panel1.Controls.Add(this.lblValeTranporteResposta);
-            this.panel1.Controls.Add(this.lblSalarioResposta);
-            this.panel1.Location = new System.Drawing.Point(476, 24);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(268, 414);
-            this.panel1.TabIndex = 17;
+            this.panelResposta.Controls.Add(this.lblAdicionais);
+            this.panelResposta.Controls.Add(this.lblDescontos);
+            this.panelResposta.Controls.Add(this.lblSalarioLiquido);
+            this.panelResposta.Controls.Add(this.lblFgts);
+            this.panelResposta.Controls.Add(this.lblIrrfResposta);
+            this.panelResposta.Controls.Add(this.lblInssResposta);
+            this.panelResposta.Controls.Add(this.lblAdicionalNoturnasResposta);
+            this.panelResposta.Controls.Add(this.lblHorasExtrasRespostas);
+            this.panelResposta.Controls.Add(this.lblPericulosidadeResposta);
+            this.panelResposta.Controls.Add(this.lblValeTranporteResposta);
+            this.panelResposta.Controls.Add(this.lblSalarioResposta);
+            this.panelResposta.Location = new System.Drawing.Point(476, 24);
+            this.panelResposta.Name = "panelResposta";
+            this.panelResposta.Size = new System.Drawing.Size(268, 414);
+            this.panelResposta.TabIndex = 17;
+            this.panelResposta.Visible = false;
             // 
             // lblFgts
             // 
@@ -354,11 +355,11 @@ namespace iRh.Windows.Simuladores
             this.Controls.Add(this.lblHorasExtras);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.lblSalario);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelResposta);
             this.Name = "frmDetalhamento";
             this.Text = "frmDetalhamento";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelResposta.ResumeLayout(false);
+            this.panelResposta.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -382,7 +383,7 @@ namespace iRh.Windows.Simuladores
         private System.Windows.Forms.Label lblHorasExtras;
         private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.Label lblSalario;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelResposta;
         private System.Windows.Forms.Label lblFgts;
         private System.Windows.Forms.Label lblIrrfResposta;
         private System.Windows.Forms.Label lblInssResposta;

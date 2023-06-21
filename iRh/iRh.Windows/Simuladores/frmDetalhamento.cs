@@ -73,6 +73,7 @@ namespace iRh.Windows.Simuladores
                 lblIrrfResposta.Text = "IRRF = - " + (irrf.ToString("C", CultureInfo.CurrentCulture));
                 lblDescontos.Text = "Total de descontos = - " + (descontos.ToString("C", CultureInfo.CurrentCulture));
                 lblAdicionais.Text = "Total de descontos = - " + (adicionais.ToString("C", CultureInfo.CurrentCulture));
+                panelResposta.Visible = true;
             }
             catch (Exception)
             {
